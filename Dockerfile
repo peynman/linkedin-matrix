@@ -39,4 +39,6 @@ COPY . /opt/linkedin-matrix
 VOLUME /data
 ENV UID=1337 GID=1337
 
+RUN chmod +x /opt/linkedin-matrix/docker-run.sh
+
 CMD ["/opt/linkedin-matrix/docker-run.sh"]
